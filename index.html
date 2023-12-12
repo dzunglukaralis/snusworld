@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html></html>
 <head>
+  <script>
+    function radit(){
+document.getElementById("rad").style.display="block"
+document.getElementById("pogar").style.display="none"
+document.getElementById("pogas").style.display="block"
+}    
+
+function paslept(){
+document.getElementById("rad").style.display="none"
+document.getElementById("pogar").style.display="block"
+document.getElementById("pogas").style.display="none"
+}
+  </script>
   <style> 
   body { 
 background-image:url(
-  https://olo-images-live.imgix.net/0e/0eaa7c8033f54045a24f2448c61d80e9.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=528&h=352&fit=fill&fm=png32&bg=transparent&s=eb9a02fdfba7a5261a493bb1e0679d28
+  https://www.tastingtable.com/img/gallery/heres-how-hamburgers-got-their-name/l-intro-1653066580.jpg
   
 ) }
 .container  {
@@ -22,13 +35,17 @@ background-image:url(
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-<body>
+<body onload="paslept()">
     <h3> Crazyhamburger</h3>
     <h1>Very crazy hamburga</h1>
     <h2>Crazy hamburger life</h2>
     <p>craziest hamburgers are found in the crazy hamburger town.</p>
         <a href='https://www.rag.lv'>crazy hamburger</a>
 <img src="https://i.kym-cdn.com/entries/icons/facebook/000/035/085/maxresdefault_(15).jpg">
+<button id="pogar" onclick="radit()">more</button>
+<div id="rad"><p>sapdoksdfpo,opksadfkasepkasd;fkoasepkafefsasfasef</p>
+<button id="pogas" onclick="paslept()">less</button>
+</div>
 <table>
     <tr>
       <th>Crazyhamburger</th>
